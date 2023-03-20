@@ -1,12 +1,5 @@
-* {
+html {
   box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  line-height: 1.5;
 }
 
 h1,
@@ -20,4 +13,78 @@ h6 {
 
 p {
   margin: 0;
+}
+
+body {
+  height: 1150px;
+  background: linear-gradient(
+    white,
+    rgb(70, 70, 70)
+  );
+  margin: 0 auto;
+  padding: 0;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  line-height: 1.5;
+}
+
+header {
+  margin-top: 10px;
+  display: flex;
+  height: 60px;
+  align-items: center;
+}
+
+.header-logo {
+  margin-left: 15px;
+}
+
+.hero-banner {
+  margin: 15px;
+  height: 600px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+  "services logo specialoffers"
+  "products logo reviews"
+  ;
+}
+
+#services {
+  margin: 5px;
+  grid-area: services;
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-start;
+}
+
+#products {
+  margin: 5px;
+  grid-area: products;
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-start;
+}
+
+#logo {
+  margin: 5px;
+  grid-area: logo;
+  align-items: center;
+  justify-content: center;
+}
+
+#specialoffers {
+  margin: 5px;
+  grid-area: specialoffers;
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-end;
+}
+
+#reviews {
+  margin: 5px;
+  grid-area: reviews;
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-end;
 }
